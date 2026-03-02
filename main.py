@@ -41,7 +41,7 @@ API_BASE_URL = os.getenv("API_BASE_URL", "https://openrouter.ai/api/v1/chat/comp
 DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "anthropic/claude-sonnet-4")
 
 # 网关端口
-PORT = int(os.getenv("PORT", "8080"))
+PORT = int(os.getenv("PORT", "0")) 
 
 # 记忆系统开关（数据库出问题时可以临时关掉）
 MEMORY_ENABLED = os.getenv("MEMORY_ENABLED", "false").lower() == "true"
