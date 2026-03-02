@@ -13,7 +13,7 @@ COPY . .
 
 # ClawCloud Run 会自动分配端口到 PORT 环境变量
 # 默认 8000
-ENV PORT=8000
+# ENV PORT=8000
 
 # 启动网关
-CMD ["python", "main.py"]
+CMD [“uvicorn”, “main:app”, “—host”, “0.0.0.0”, “—port”, “0”]
